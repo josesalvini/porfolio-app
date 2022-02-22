@@ -7,7 +7,7 @@ import { SharedModule } from './shared/components/shared.module';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, SharedModule],
+  imports: [BrowserModule.withServerTransition({ appId: 'serverApp' }), AppRoutingModule, SharedModule],
   providers: [],
   bootstrap: [AppComponent],
 })
